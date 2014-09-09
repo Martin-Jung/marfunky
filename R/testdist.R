@@ -12,7 +12,7 @@
 
 # Displays AIC/BIC for various distribution models
 testdist <- function(values){
-  require(MASS)
+  if (!require(MASS)){ print("MASS not installed. Will install it now");install.packages("MASS", dependencies = TRUE)}
   distributions <- c("normal","lognormal","exponential","logistic","cauchy","gamma","geometric","weibull")
   res <- data.frame(cbind(distributions)); res[,c("AIC","BIC")] <- NA
   for(i in seq(1:nrow(res))){
