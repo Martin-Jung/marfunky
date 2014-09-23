@@ -2,14 +2,21 @@
 #' 
 #' Just a specific function for me that quietly
 #' loads all the packages I regularly use. Able to make subsets for specific uses
-#' @param which (Optional) Stuff to load. Available: 'Standard' (Default), 'GIS', 'Plot' (Default), 'Analysis', 'Diversity'
+#' @param which (Optional) Stuff to load. Available: 'Standard' (Default), 'GIS', 'Plot' (Default), 'Analysis', 'Diversity', 'ALL'
 #' @keywords package loading
 #' @export
 #' @usage standardPackages(...)
 #' @author Martin Jung
 
-
 standardPackages <- function(which=c("Standard","Plot")) {
+  if(("ALL" %in% which) | ("all" %in% which)){
+    which <- c('Standard','GIS', 'Plot', 'Analysis', 'Diversity')
+  }
+  lF <- function(x){
+    cat(paste0("Loading package ",x," \n"))
+    library(as.character(x),character.only = T,warn.conflicts = F,quietly = T)
+    #if(y==F) { print(paste0(x," not installed. Will install it now"));install.packages(x, dependencies = TRUE)}
+  }  
   
   if("Standard" %in% which){
     lF("gdata")
@@ -19,6 +26,7 @@ standardPackages <- function(which=c("Standard","Plot")) {
     lF("reshape2")
     lF("lubridate")
     lF("stringr")
+    #lF("Hmisc")
   }
   
   if("Plot" %in% which){
@@ -65,10 +73,5 @@ standardPackages <- function(which=c("Standard","Plot")) {
     lF("BiodiversityR")
     lF("picante")
   }
-  
-  lF <- function(x){
-    cat(paste0("Loading package ",x," \n"))
-    library(as.character(x),character.only = T,warn.conflicts = F,quietly = T)
-    #if(y==F) { print(paste0(x," not installed. Will install it now"));install.packages(x, dependencies = TRUE)}
-  }  
+
 }

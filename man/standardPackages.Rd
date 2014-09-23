@@ -6,7 +6,7 @@
 standardPackages(...)
 }
 \arguments{
-\item{which}{(Optional) Stuff to load. Available: 'Standard' (Default), 'GIS', 'Plot' (Default), 'Analysis', 'Diversity'}
+\item{which}{(Optional) Stuff to load. Available: 'Standard' (Default), 'GIS', 'Plot' (Default), 'Analysis', 'Diversity', 'ALL'}
 }
 \description{
 Just a specific function for me that quietly
