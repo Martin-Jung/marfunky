@@ -38,6 +38,7 @@ standardPackages <- function(which=c("Standard","Plot")) {
     lF("grid")
     lF("gridExtra")
     lF("coefplot2")
+    lF("ggthemr")
   }
   
   if('GIS' %in% which){
