@@ -4,9 +4,9 @@
 #' @param values Input numerical vector
 #' @keywords standard-error
 #' @export
-#' @usage stderr(x)
+#' @usage sem(x)
 #' @author Martin Jung
 
-stderr <- function(x) {
+sem <- function(x) {
   sqrt(var(x,na.rm=TRUE)/length(na.omit(x)))
 }
