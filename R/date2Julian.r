@@ -3,6 +3,7 @@
 #'@param A date object
 #'\code{FALSE}
 #'@export
+#'
  
 date2Julian <- function(dat) {
   #converts date to julian day, so it can be easily plotted

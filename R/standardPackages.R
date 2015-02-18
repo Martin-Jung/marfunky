@@ -26,6 +26,8 @@ standardPackages <- function(which=c("Standard","Plot")) {
     lF("reshape2")
     lF("lubridate")
     lF("stringr")
+    lF("magrittr")
+    lF("dplyr")
     #lF("Hmisc")
   }
   
