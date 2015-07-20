@@ -11,7 +11,6 @@
 #' @param signif.P Significane level (float)
 #' @param color.blocks.in.cor.plot Show colors in correlation plot (boolean)
 #' @param jitter.Y.in.cor.plot Do jitter on y value in correlation plot (boolean)
-#'
 #' @return returns Test results
 #' @export
 
