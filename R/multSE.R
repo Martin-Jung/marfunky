@@ -3,7 +3,6 @@
 #' Adapted and combined from Jon Lefcheck's method
 #' 
 #' @author Jon Lefcheck, Martin Jung
-#' @concepts Jon Lefcheck
 #' @source Anderson, MJ and J Santanta-Garcon. 2015. "Measures of precision for dissimilarity-based multivariate analysis of ecological communities." Ecology Letters 18(1): 66-73.
 #' 
 #' @param D a dist object from species-site matrix
@@ -172,7 +171,6 @@ multSE = function(D, group = 1, nresamp = 1000, permanova = FALSE, mins = TRUE, 
 #' Adapted and combined from Jon Lefcheck's method
 #' 
 #' @author Jon Lefcheck, Martin Jung
-#' @concepts Jon Lefcheck
 #' @source Anderson, MJ and J Santanta-Garcon. 2015. "Measures of precision for dissimilarity-based multivariate analysis of ecological communities." Ecology Letters 18(1): 66-73.
 #' 
 #' @param output 
