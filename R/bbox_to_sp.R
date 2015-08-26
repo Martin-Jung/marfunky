@@ -3,7 +3,7 @@
 #' @param sp A Spatial file
 #' @export
 
-bbox_to_sp<-function(sp){
+sp_bbox <-function(sp){
   bbox <- bbox(sp)
   x <- c(bbox[1,1], bbox[1,1], bbox[1,2], bbox[1,2], bbox[1,1])
   y <- c(bbox[2,1], bbox[2,2], bbox[2,2], bbox[2,1], bbox[2,1])
